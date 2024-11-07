@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- Description: Main Page -->
+<!-- Author: Fam Sin Mim -->
+<!-- Date 07/09/2024 -->
+<!-- Validated: OK 17/09/2024-->
+
+<head>
+    <title>Herbarium</title>
+	<meta charset="utf-8"/>
+	<meta name="author" content="Fam Sin Mim"/>
+	<meta name="description" content="Explore the art of preserving plants with our herbarium guide. Learn about plant classification, preservation techniques, and the essential tools and care tips for creating beautiful and scientifically valuable specimens. Perfect for botanists, hobbyists, and nature enthusiasts."/>
+	<meta name="keywords" content="plant, herbarium, specimens, fresh, classifications,tutorial, tools, care, preserved, taxonomists, identification, plant family, genus, species"/>
+	<!-- viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<!-- favicon Icon -->
+	<link rel="icon" type="image/x-icon" href="images/leaf_logo.ico"/> 
+	<!-- Font -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/> 
+	<link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="styles/style.css"/>
+	<script src="enhancement.js" defer></script>
+	<script src="enquiry.js" defer></script>
+	<script src="dropdown.js" defer></script>
+</head>
+<body>
+    <header>
+		<nav>
+			<input type="checkbox" id="open-check"/>
+			<label for="open-check" class="close-menu"><i class="fas fa-times"></i></label>
+			<label for="open-check" class="open-menu"><i class="fas fa-bars"></i></label>
+			<a class="logo" href="index.html"><img src="images/leaf.png" alt="Green Plant"></a>
+			<ul class="menu">
+				<li class="home"><a href="index.html">HOME</a></li>
+				<li><a href="classify.html">CLASSIFY</a></li>
+				<li class="menubar">
+					<a href="#"><span class="dropdown-btn">HERBARIUM <i class="fa fa-caret-down"></i></span></a>
+					<ul class="dropdown-content">
+					</ul>
+				</li>
+				<li><a href="profile.html">ABOUT ME</a></li>
+				<li class="special"><a href="enquiry.html">ENQUIRY <i class="fa-solid fa-circle-question"></i></a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<article>
+			<!-- The sticky element of feedback -->
+			<div>
+				<button class="feedback" title="Share your feedback">Feedback | <i class="fa-solid fa-comments"></i></button>
+			</div>
+			<!-- feedback pop-up window -->
+			<div id="popup-window">
+				<p id="close_popup"><i class="fa-solid fa-xmark"></i></p>
+				<h2>Feedback</h2>
+				<p>We value your opinion.</p>
+				<form name="feedback" method="post" action="mailto:104384041@students.swinburne.edu.my" enctype="text/plain">
+					<table>
+						<tr>
+							<td colspan="2">Did the resources or guides help you achieve your goals?</td>
+						</tr>
+						<tr>
+							<td id="radio_goal">
+								<input type="radio" id="yes" name="achivegoals?" value="yes" checked="checked"/>
+								<label for="yes">Yes</label>
+							</td>
+							<td>
+								<input type="radio" id="no" name="achivegoals?" value="no"/>
+								<label for="no">No</label>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								How would you rate your website experience?
+							</td>
+						</tr>
+						<tr>
+							<td id="emoji" colspan="2">
+								<input type="radio" name="rating" id="rate_1" value="rate_1"/>
+								<label for="rate_1"><i class="fa-solid fa-face-angry"></i></label>
+
+								<input type="radio" name="rating" id="rate_2" value="rate_2"/>
+								<label for="rate_2"><i class="fa-solid fa-face-tired"></i></label>
+
+								<input type="radio" name="rating" id="rate_3" value="rate_3"/>
+								<label for="rate_3"><i class="fa-solid fa-face-frown"></i></label>
+
+								<input type="radio" name="rating" id="rate_4" value="rate_4" checked="checked"/>
+								<label for="rate_4"><i class="fa-solid fa-face-smile"></i></label>
+
+								<input type="radio" name="rating" id="rate_5" value="rate_5"/>
+								<label for="rate_5"><i class="fa-solid fa-face-laugh-squint"></i></label>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><label for="details">Please share your in detail what we can improve your website experience.</label></td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<textarea name="details" rows="7" cols="40" id="details" required="required"></textarea>
+							</td>
+						</tr>
+						<tr id="feedback_btn">
+							<td colspan="2">
+								<input type="reset" value="Cancel"/>
+								<input type="submit" value="Submit"/>
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			<!-- Header Image and overlay-text -->
+			<div id="main-startup">
+				<img src="images/main_bg.jpg" alt="Herbarium Specimens"/>
+			</div>
+			<div class="overlay-text">
+				<h1>The Art of Preservation</h1>
+				<p><span class="text">Turning Nature Into Timeless Specimens</span></p>
+			</div>
+			<br/><br/><br/>
+			<!-- Brief introduction of Herbarium -->
+			<div class="image-text">
+				<figure id="explore_herbarium">
+					<div id="image_slideshow">
+						<div class="slides_image">
+							<img src="images/herbarium_img.jpg" alt="Herbarium Specimens"/> 
+						</div>
+						<div class="slides_image">
+							<img src="images/herbarium_img2.jpg" alt="Herbarium Specimens"/>
+						</div>
+						<div class="slides_image">
+							<img src="images/herbarium_img3.jpg" alt="Herbarium Specimens">
+						</div>
+						<div class="group-dot">
+							<span class="dot1"></span>
+							<span class="dot1"></span>
+							<span class="dot1"></span>
+						</div>
+					</div>
+					<span id="small-pic">
+						<img src="images/herbarium_butterfly.jpg" alt="Herbarium Butterfly"/>
+						<img src="images/herbarium_glass.jpg" alt="Glass Herbarium"/>
+					</span>
+				</figure>
+				<div class="desc1 main_herbarium">
+					<h2>Herbarium</h2>
+					<p>A herbarium is a unique collection of preserved plant specimens, meticulously cataloged for scientific research. These collections help us understand plant diversity, track ecological changes, and study evolution over time. By documenting plants from various regions and periods, herbaria provide crucial insights into biodiversity and environmental shifts. </p>
+					<br/>
+					<div id="read_btn">
+						<a href="tutorial.html#definition_herbarium">Read More  &#10230;</a>
+					</div>
+				</div>
+			</div> 
+			<!-- The role of herbarium -->
+			<div class="heading-line">
+				<span class="line"></span>
+				<h2>Role of Herbarium</h2>
+				<span class="line"></span>
+			</div>
+			<div id="role">
+				<ul>
+					<li class="hiddenrole"><i class="fa-solid fa-seedling"></i> Herbaria aid in taxonomy, systematics, and conservation biology.</li>
+					<li class="hiddenrole"><i class="fa-solid fa-database"></i> They support research in medicine, agriculture, and industry.</li>
+					<li class="hiddenrole"><i class="fa-solid fa-circle-info"></i> Herbaria provide plant specimens for identification and comparison.</li>
+					<li class="hiddenrole"><i class="fa-solid fa-book"></i> They record plant distribution, helping track environmental changes over time.</li>
+				</ul>
+			</div>
+			<section class="main_explore">
+				<div class="heading-line">
+					<span class="line"></span>
+					<h2>Explore the World of Plant Preservation</h2>
+					<span class="line"></span>
+				</div>
+				<div id="desc2">
+					<p>Discover how to classify plants, gather the right tools, and preserve herbarium specimens. Dive into our tutorials and learn the essentials of plant care and preservation.</p>
+				</div>
+				<!-- Animated Card -->
+				<div id="wrapper">
+					<div id="container">
+						<div class="card active" id="c1">
+							<span class="icon"><i class="fa-solid fa-seedling"></i></span>
+							<div class="description">
+								<h3>Classification</h3>
+								<p>Learn how plants are grouped into families, genera, and species.</p>
+								<p><a href="classify.html#lauraceae_explain">Learn More</a></p>
+							</div>
+						</div>
+				
+						<div class="card" id="c2">
+							<span class="icon"><i class="fa-solid fa-book"></i></span>
+							<div class="description">
+								<h3>Herbarium Tutorial</h3>
+								<p>Follow our step-by-step guide on turning fresh leaves into preserved herbarium specimens.</p>
+								<p><a href="tutorial.html#step">Learn More</a></p>
+							</div>
+						</div>
+				
+						<div class="card" id="c3">
+							<span class="icon"><i class="fa-solid fa-toolbox"></i></span>
+							<div class="description">
+								<h3>Essential Tools</h3>
+								<p>Explore the tools needed for creating herbarium specimens, from pressing plants to preserving them.</p>
+								<p><a href="tools.html#tools">Learn More</a></p>
+							</div>
+						</div>
+
+						<div class="card" id="c4">
+							<span class="icon"><i class="fa-brands fa-gratipay"></i></span>
+							<div class="description">
+								<h3>Care Tips</h3>
+								<p>Discover essential tips to keep your herbarium specimens in excellent condition for long-term preservation.</p>
+								<p><a href="care.html#environment">Learn More</a></p>
+							</div>
+						</div>
+					</div>
+				</div>			
+			</section>
+		</article>
+		<footer>
+			<ul>
+				<li class="footer-list">
+					<a href="index.html">HOME</a>
+				</li>
+				<li class="footer-list">
+					<a href="classify.html">CLASSIFY</a>
+					<ul class="footer-content">
+						<li><a href="classify.html#plant_taxonomy">PLANT TAXONOMY</a></li>
+						<li><a href="classify.html#lauraceae_explain">LAURACEAE</a></li>
+					</ul>
+				</li>
+				<li class="footer-list">
+					<span id="herbarium-ft">HERBARIUM</span>
+					<ul class="footer-content">
+						<li><a href="tutorial.html">TUTORIAL</a></li>
+						<li><a href="tools.html">TOOLS</a></li>
+						<li><a href="care.html">CARE</a></li>
+					</ul>
+				</li>
+				<li class="footer-list">
+					<ul class="footer-content2">
+						<li><a href="profile.html">ABOUT ME</a></li>
+						<li><a href="enquiry.html">ENQUIRY</a></li>
+						<li><a href="enhancement1.html">ENHANCEMENT</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class=ft-bottom>
+				<p><a href="index.html">&copy; Herbarium</a> | <a href="https://www.youtube.com/watch?v=RuRXKj6LD2Q">Website Showcase</a> | <a href="acknowledgement.html"> Acknowledgement</a> | <span class="clock" id="clock">Loading...</span></p>
+			</div>
+		</footer>
+	</main>
+	<a class="gotopbtn" href="#" title="back to top"><i class="fa-solid fa-arrow-up"></i></a>
+</body>
+</html>

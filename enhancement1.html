@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- Description: Enhancement -->
+<!-- Author: Fam Sin Mim -->
+<!-- Date 26/09/2024 -->
+<!-- Validated: OK 26/09/2024-->
+
+<head>
+    <title>Enhancement | Herbarium</title>
+	<meta charset="utf-8"/>
+	<meta name="author" content="Fam Sin Mim"/>
+	<meta name="description" content="Discover our digital Plant Herbarium, offering a diverse collection of preserved botanical specimens, detailed plant classifications, and step-by-step guides on how to preserve plants. Perfect for botanists, students, and nature enthusiasts looking to explore and learn about the world of flora."/>
+	<meta name="keywords" content="plant, herbarium, specimens, fresh, classifications,tutorial, tools, care, preserved, taxonomists, identification, plant family, genus, species"/>
+    <!-- Viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Favicon Icon -->
+	<link rel="icon" type="image/x-icon" href="images/leaf_logo.ico"/> 
+    <!-- Font -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/> 
+	<link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="styles/style.css"/>
+    <script src="enhancement.js" defer></script>
+    <script src="dropdown.js" defer></script>
+</head>
+<body>
+	<header>
+		<nav>
+			<input type="checkbox" id="open-check"/>
+			<label for="open-check" class="close-menu"><i class="fas fa-times"></i></label>
+			<label for="open-check" class="open-menu"><i class="fas fa-bars"></i></label>
+			<a class="logo" href="index.html"><img src="images/leaf.png" alt="Green Plant"/></a>
+			<ul class="menu">
+				<li class="home"><a href="index.html">HOME</a></li>
+				<li><a href="classify.html">CLASSIFY</a></li>
+				<li class="menubar">
+					<a href="#"><span class="dropdown-btn">HERBARIUM <i class="fa fa-caret-down"></i></span></a>
+					<ul class="dropdown-content">
+					</ul>
+				</li>
+				<li><a href="profile.html">ABOUT ME</a></li>
+				<li class="special"><a href="enquiry.html">ENQUIRY <i class="fa-solid fa-circle-question"></i></a></li>
+				
+			</ul>
+		</nav>
+	</header>
+	<main>
+        <article id="enhancement">
+            <h2>Enhancements</h2>
+            <p>Welcome to the Enhancements page. Here, you’ll discover the improvements and updates that have been made to the project. Explore the latest features and refinements implemented for an even better experience.</p>
+            <!-- The sticky element of feedback -->
+			<div>
+				<button class="feedback" title="Share your feedback">Feedback | <i class="fa-solid fa-comments"></i></button>
+			</div>
+            <!-- feedback pop-up window -->
+			<div id="popup-window">
+				<p id="close_popup"><i class="fa-solid fa-xmark"></i></p>
+				<h2>Feedback</h2>
+				<p>We value your opinion.</p>
+				<form name="feedback" method="post" action="mailto:104384041@students.swinburne.edu.my" enctype="text/plain">
+					<table>
+						<tr>
+							<td colspan="2">Did the resources or guides help you achieve your goals?</td>
+						</tr>
+						<tr>
+							<td id="radio_goal">
+								<input type="radio" id="yes" name="achivegoals?" value="yes" checked="checked"/>
+								<label for="yes">Yes</label>
+							</td>
+							<td>
+								<input type="radio" id="no" name="achivegoals?" value="no"/>
+								<label for="no">No</label>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								How would you rate your website experience?
+							</td>
+						</tr>
+						<tr>
+							<td id="emoji" colspan="2">
+								<input type="radio" name="rating" id="rate_1" value="rate_1"/>
+								<label for="rate_1"><i class="fa-solid fa-face-angry"></i></label>
+
+								<input type="radio" name="rating" id="rate_2" value="rate_2"/>
+								<label for="rate_2"><i class="fa-solid fa-face-tired"></i></label>
+
+								<input type="radio" name="rating" id="rate_3" value="rate_3"/>
+								<label for="rate_3"><i class="fa-solid fa-face-frown"></i></label>
+
+								<input type="radio" name="rating" id="rate_4" value="rate_4" checked="checked"/>
+								<label for="rate_4"><i class="fa-solid fa-face-smile"></i></label>
+
+								<input type="radio" name="rating" id="rate_5" value="rate_5"/>
+								<label for="rate_5"><i class="fa-solid fa-face-laugh-squint"></i></label>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><label for="details">Please share your in detail what we can improve your website experience.</label></td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<textarea name="details" rows="7" cols="40" id="details" required="required"></textarea>
+							</td>
+						</tr>
+						<tr id="feedback_btn">
+							<td colspan="2">
+								<input type="reset" value="Cancel"/>
+								<input type="submit" value="Submit"/>
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+            <!-- Sticky Element Menu -->
+            <div class="enhance_container">
+                <div class="explain_enhance">
+                    <div class="desc_enhancement">
+                        <h2>1. Sticky Element Menu</h2>
+                        <ul>
+                            <li>Move along with users when scrolling the page</li>
+                            <li>To enhance user's experience</li>
+                            <li>More convienent for user to access with</li>
+                            <li>Convey a sense of control to user</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <figure>
+                            <h2>Reference Source:</h2>
+                            <a href="https://www.scaler.com/topics/sticky-navbar-css/" target="reference_window" title="https://www.scaler.com/topics/sticky-navbar-css/"><img src="images/sticky.png" alt="Sticky Menu Bar Scaler"/></a>
+                            <figcaption>Scaler</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="pages">
+                    <h2>Referred Page:</h2>
+                    <ul>
+                        <li><a href="#"> All</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Dropdown Menu -->
+            <div class="enhance_container">
+                <div class="explain_enhance">
+                    <div class="desc_enhancement">
+                        <h2>2. Dropdown Menu</h2>
+                        <ul>
+                            <li>Funtional navigation bar</li>
+                            <li>Provide well-organized link structure</li>
+                            <li>Freeing up the sidebar space </li>
+                            <li>No scattering links accross the navigation bar</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Reference Source:</h2>
+                        <embed width="500" height="300" 
+                    src="https://www.youtube.com/embed/VQWu4e6agPc?si=gP6FZehS1WAEMWUu"/>
+                    <figcaption>YouTube Video about Dropdown Tutorial</figcaption> 
+                    </div>
+                </div>
+                <div class="pages">
+                    <h2>Referred Page:</h2>
+                    <ul>
+                        <li><a href="#"> All</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Responsive Design Layout -->
+            <div class="enhance_container">
+                <div class="explain_enhance">
+                    <div class="desc_enhancement">
+                        <h2>3. Responsive Design Layout</h2>
+                        <ul>
+                            <li>Can adapt to the size of users' viewport</li>
+                            <li>Suitable for the size start from mobile (large), tablet and laptop sizes</li>
+                            <li>Improve the online browsing experience</li>
+                            <li>Improve user's convienent</li>
+                            <li>No scattering links accross the navigation bar</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Reference Source:</h2>
+                        <figure>
+                            <a href="https://www.w3schools.com/html/html_responsive.asp" target="reference_window" title="https://www.w3schools.com/html/html_responsive.asp"><img src="images/responsive.png" alt="Responsive design layout" /></a>
+                            <figcaption>W3School</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="pages">
+                    <h2>Referred Page:</h2>
+                    <ul>
+                        <li><a href="#"> All</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Hover Button Effect -->
+            <div class="enhance_container">
+                <div class="explain_enhance">
+                    <div class="desc_enhancement">
+                        <h2>4. Hover Button Effect</h2>
+                        <ul>
+                            <li>Colour changing on background color and font colour</li>
+                            <li>Enhance the visual appeal</li>
+                            <li>Enhance dynamic interaction between users and website </li>
+                            <li>Improved engagement on navigation</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Reference Source:</h2>
+                        <figure>
+                            <a href="https://www.w3schools.com/cssref/sel_hover.php" target="reference_window" title="https://www.w3schools.com/cssref/sel_hover.php"><img src="images/hover.png" alt="Hover Effects W3School"/></a>
+                            <figcaption>W3School</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="pages">
+                    <h2>Referred Page:</h2>
+                    <ul>
+                        <li><a href="tools.html"><i class="fa-solid fa-toolbox"></i> Tools</a> </li>
+                        <li><a href="profile.html"><i class="fa-solid fa-child-dress"></i> About Me</a> </li>
+                        <li><a href="enquiry.html"><i class="fa-solid fa-circle-question"></i> Enquiry</a> </li>
+                        <li><a href="enhancement1.html"><i class="fa-solid fa-circle-up"></i> Enhancement</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Flip Card -->
+            <div class="enhance_container">
+                <div class="explain_enhance">
+                    <div class="desc_enhancement">
+                        <h2>5. Flip Card</h2>
+                        <ul>
+                            <li>To enhance the attractiveness of the website</li>
+                            <li>To grab users' attention by creating colour contrast</li>
+                            <li>Organize tidy and clear content </li>
+                            <li>Enhance users' memorization and learning process</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Reference Source:</h2>
+                        <embed width="500" height="300" 
+                    src="https://www.youtube-nocookie.com/embed/NCLdf661ILE?si=l-xwVGeGuguD2RBt"/> 
+                    <figcaption>YouTube Video about flip card tutorial</figcaption> 
+                    </div>
+                </div>
+                <div class="pages">
+                    <h2>Referred Page:</h2>
+                    <ul>
+                        <li><a href="classify.html#lauraceae_explain"><i class="fa-solid fa-seedling"></i> Classify</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Timeline -->
+            <div class="enhance_container">
+                <div class="explain_enhance">
+                    <div class="desc_enhancement">
+                        <h2>6. Timeline</h2>
+                        <ul>
+                            <li>Improve the understandable of the content</li>
+                            <li>Create well-organized structure layout</li>
+                            <li>Include image to enhance the attractiveness </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Reference Source:</h2>
+                        <embed width="500" height="300" 
+                    src="https://www.youtube.com/embed/eWKQ_IpngF0?si=6GcJqflHYL5vwztY"/>
+                    <figcaption>YouTube Video about timeline tutorial</figcaption> 
+                    </div>
+                </div>
+                <div class="pages">
+                    <h2>Referred Page:</h2>
+                    <ul>
+                        <li><a href="tutorial.html#timeline"><i class="fa-solid fa-book"></i> Tutorial</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Animated Card -->
+            <div class="enhance_container">
+                <div class="explain_enhance">
+                    <div class="desc_enhancement">
+                        <h2>7. Animated Card</h2>
+                        <ul>
+                            <li>To improve the visual appeal of the content</li>
+                            <li>Highlight the important sections of the website</li>
+                            <li>Easily access to other webpage </li>
+                            <li>To improve the engagement</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Reference Source:</h2>
+                        <embed width="500" height="300" 
+                    src="https://www.youtube.com/embed/45mnmy2JUl0?si=reCT4LQbM57FWENJ"/> 
+                    <figcaption>YouTube Video about animated card</figcaption> 
+                    </div>
+                </div>
+                <div class="pages">
+                    <h2>Referred Page:</h2>
+                    <ul>
+                        <li><a href="index.html#wrapper"><i class="fa-solid fa-house"></i> Homepage</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Back to Top Button -->
+            <div class="enhance_container">
+                <div class="explain_enhance">
+                    <div class="desc_enhancement">
+                        <h2>8. Back To Top Button</h2>
+                        <ul>
+                            <li>To improve the user convenience</li>
+                            <li>Time Saving as access to the top without additional scrolling </li>
+                            <li>Helpful to mobile users </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Reference Source:</h2>
+                        <figure>
+                            <a href="https://www.codeinero.net/sales-rocket-features/back-to-top-button" target="reference_window" title="https://www.codeinero.net/sales-rocket-features/back-to-top-button"><img src="images/back_to_top.png" alt="Back to Top"/></a>
+                            <figcaption>Codeinero</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="pages">
+                    <h2>Referred Page:</h2>
+                    <ul>
+                        <li><a href="#"> All</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Favicon Icon -->
+            <div class="enhance_container">
+                <div class="explain_enhance">
+                    <div class="desc_enhancement">
+                        <h2>9. Favicon Icon</h2>
+                        <ul>
+                            <li>Easily find the website when browsing multiple website</li>
+                            <li>Ease in recognition in browsing history</li>
+                            <li>Enahnce website's credibility </li>
+                            <li>Instil trust in users</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Reference Source:</h2>
+                        <figure>
+                            <a href="https://www.w3schools.com/html/html_favicon.asp" target="reference_window" title="https://www.w3schools.com/html/html_favicon.asp"><img src="images/favicon_icon.png" alt="Favicon Icon" /></a>
+                            <figcaption>W3School</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="pages">
+                    <h2>Referred Page:</h2>
+                    <ul>
+                        <li><a href="#"> All</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Embed Youtube Video -->
+            <div class="enhance_container">
+                <div class="explain_enhance">
+                    <div class="desc_enhancement">
+                        <h2>10. Embed Youtube Video</h2>
+                        <ul>
+                            <li>Provide a valuable visual content such as multimedia element</li>
+                            <li>Enhance the attractiveness of the content</li>
+                            <li>Enhance users' engagement</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Reference Source:</h2>
+                        <figure>
+                            <a href="https://careerkarma.com/blog/embed-video-html/" target="reference_window" title="https://careerkarma.com/blog/embed-video-html/"><img src="images/embed.png" alt="Embed Video" /></a>
+                            <figcaption>Career Karma</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="pages">
+                    <h2>Referred Page:</h2>
+                    <ul>
+                        <li><a href="classify.html"><i class="fa-solid fa-seedling"></i> Classify</a> </li>
+                        <li><a href="enhancement1.html"><i class="fa-solid fa-circle-up"></i> Enhancement</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Interactive Tab -->
+            <div class="enhance_container">
+                <div class="explain_enhance">
+                    <div class="desc_enhancement">
+                        <h2>11. Interactive Tab</h2>
+                        <ul>
+                            <li>Contributes to well-organized and clearer organization structure</li>
+                            <li>Convenient to find for the information</li>
+                            <li>Enhance users' engagement</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Reference Source:</h2>
+                        <embed width="500" height="300" 
+                    src="https://www.youtube.com/embed/oJQREY8qyZM?si=-DQoZaoJ--8aBTdp"/>
+                    <figcaption>YouTube Video about interactive tab</figcaption>  
+                    </div>
+                </div>
+                <div class="pages">
+                    <h2>Referred Page:</h2>
+                    <ul>
+                        <li><a href="tools.html"><i class="fa-solid fa-toolbox"></i> Tools</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Hamburger Menu Bar -->
+            <div class="enhance_container">
+                <div class="explain_enhance">
+                    <div class="desc_enhancement">
+                        <h2>12. Hamburger Menu Bar</h2>
+                        <ul>
+                            <li>Reduce the limited screen space </li>
+                            <li>Provide a clear and visible navigation structure</li>
+                            <li>Enhance users' experience as can more focus on content</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Reference Source:</h2>
+                        <embed width="500" height="300" 
+                    src="https://www.youtube-nocookie.com/embed/QQlxvj_GKss?si=T_TgY9eKjKj6t6ml"/>
+                    <figcaption>YouTube Video about hamburger menu bar</figcaption>  
+                    </div>
+                </div>
+                <div class="pages">
+                    <h2>Referred Page:</h2>
+                    <ul>
+                        <li><a href="#"> All</a></li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+        <footer>
+			<ul>
+				<li class="footer-list">
+					<a href="index.html">HOME</a>
+				</li>
+				<li class="footer-list">
+					<a href="classify.html">CLASSIFY</a>
+					<ul class="footer-content">
+						<li><a href="classify.html#plant_taxonomy">PLANT TAXONOMY</a></li>
+						<li><a href="classify.html#lauraceae_explain">LAURACEAE</a></li>
+					</ul>
+				</li>
+				<li class="footer-list">
+					<span id="herbarium-ft">HERBARIUM</span>
+					<ul class="footer-content">
+						<li><a href="tutorial.html">TUTORIAL</a></li>
+						<li><a href="tools.html">TOOLS</a></li>
+						<li><a href="care.html">CARE</a></li>
+					</ul>
+				</li>
+				<li class="footer-list">
+					<ul class="footer-content2">
+						<li><a href="profile.html">ABOUT ME</a></li>
+						<li><a href="enquiry.html">ENQUIRY</a></li>
+						<li><a href="enhancement1.html">ENHANCEMENT</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class=ft-bottom>
+				<p><a href="index.html">&copy; Herbarium</a> |<a href="acknowledgement.html"> Acknowledgement</a> | <span class="clock" id="clock">Loading...</span></p>
+			</div>
+		</footer>
+    </main>
+    <a class="gotopbtn" href="#" title="back to top"><i class="fa-solid fa-arrow-up"></i></a>
+</body>
+</html>

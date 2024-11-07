@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- Description: Profile -->
+<!-- Author: Fam Sin Mim -->
+<!-- Date 10/09/2024 -->
+<!-- Validated: OK 12/09/2024-->
+
+<head>
+    <title>Profile | Herbarium</title>
+	<meta charset="utf-8"/>
+	<meta name="author" content="Fam Sin Mim"/>
+	<meta name="description" content="Discover our digital Plant Herbarium, offering a diverse collection of preserved botanical specimens, detailed plant classifications, and step-by-step guides on how to preserve plants. Perfect for botanists, students, and nature enthusiasts looking to explore and learn about the world of flora."/>
+	<meta name="keywords" content="plant, herbarium, specimens, fresh, classifications,tutorial, tools, care, preserved, taxonomists, identification, plant family, genus, species,acknowledgement"/>
+    <!-- viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- favicon icon -->
+	<link rel="icon" type="image/x-icon" href="images/leaf_logo.ico"/> 
+    <!-- font -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/> 
+	<link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="styles/style.css"/>
+    <script src="enhancement.js" defer></script>
+	<script src="enquiry.js" defer></script>
+    <script src="dropdown.js" defer></script>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<input type="checkbox" id="open-check"/>
+			<label for="open-check" class="close-menu"><i class="fas fa-times"></i></label>
+			<label for="open-check" class="open-menu"><i class="fas fa-bars"></i></label>
+			<a class="logo" href="index.html"><img src="images/leaf.png" alt="Green Plant"></a>
+			<ul class="menu">
+                <li class="home"><a href="index.html">HOME</a></li>
+				<li><a href="classify.html">CLASSIFY</a></li>
+				<li class="menubar">
+					<a href="#"><span class="dropdown-btn">HERBARIUM <i class="fa fa-caret-down"></i></span></a>
+					<ul class="dropdown-content">
+					</ul>
+				</li>
+				<li><a href="profile.html">ABOUT ME</a></li>
+				<li class="special"><a href="enquiry.html">ENQUIRY <i class="fa-solid fa-circle-question"></i></a></li>
+				
+			</ul>
+		</nav>
+	</header>
+    <main>
+        <article id="profile-startup">
+            <!-- The sticky element of feedback -->
+			<div>
+				<button class="feedback" title="Share your feedback">Feedback | <i class="fa-solid fa-comments"></i></button>
+			</div>
+            <!-- Feedback Popup-window -->
+            <div id="popup-window">
+				<p id="close_popup"><i class="fa-solid fa-xmark"></i></p>
+				<h2>Feedback</h2>
+				<p>We value your opinion.</p>
+				<form name="feedback" method="post" action="mailto:104384041@students.swinburne.edu.my" enctype="text/plain">
+					<table>
+						<tr>
+							<td colspan="2">Did the resources or guides help you achieve your goals?</td>
+						</tr>
+						<tr>
+							<td id="radio_goal">
+								<input type="radio" id="yes" name="achivegoals?" value="yes" checked="checked"/>
+								<label for="yes">Yes</label>
+							</td>
+							<td>
+								<input type="radio" id="no" name="achivegoals?" value="no"/>
+								<label for="no">No</label>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								How would you rate your website experience?
+							</td>
+						</tr>
+						<tr>
+							<td id="emoji" colspan="2">
+								<input type="radio" name="rating" id="rate_1" value="rate_1"/>
+								<label for="rate_1"><i class="fa-solid fa-face-angry"></i></label>
+
+								<input type="radio" name="rating" id="rate_2" value="rate_2"/>
+								<label for="rate_2"><i class="fa-solid fa-face-tired"></i></label>
+
+								<input type="radio" name="rating" id="rate_3" value="rate_3"/>
+								<label for="rate_3"><i class="fa-solid fa-face-frown"></i></label>
+
+								<input type="radio" name="rating" id="rate_4" value="rate_4" checked="checked"/>
+								<label for="rate_4"><i class="fa-solid fa-face-smile"></i></label>
+
+								<input type="radio" name="rating" id="rate_5" value="rate_5"/>
+								<label for="rate_5"><i class="fa-solid fa-face-laugh-squint"></i></label>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><label for="details">Please share your in detail what we can improve your website experience.</label></td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<textarea name="details" rows="7" cols="40" id="details" required="required"></textarea>
+							</td>
+						</tr>
+						<tr id="feedback_btn">
+							<td colspan="2">
+								<input type="reset" value="Cancel"/>
+								<input type="submit" value="Submit"/>
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+            <h2>Get To Know Me</h2>
+            <!-- Sin Mim's self introduction -->
+            <figure class="aboutme-pic">
+                <img src="images/sinmim.jpg" alt="Sin Mim"/>
+            </figure>
+            <h3>Fam Sin Mim</h3>
+            <h4>Student ID: 104384041</h4>
+            <h4>Course: Bachelor of Information and Communication Technology</h4>
+            <div class="heading-line">
+                <span class="line"></span>
+                <h2 class="personal-details">Demographic</h2>
+                <span class="line"></span>
+            </div>
+            <!-- Demographic Information -->
+            <table class="profile_table">
+                <tr>
+                    <th>Gender:</th>
+                    <td colspan="3">Female</td>
+                </tr>
+                <tr>
+                    <th>Date of Birth:</th>
+                    <td>16 August 2005</td>
+                    <th>Age:</th>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <th>Zodiac:</th>
+                    <td colspan="3">Leo</td>
+                </tr>
+                <tr>
+                    <th>Nationality:</th>
+                    <td colspan="3">Malaysian</td>
+                </tr>
+                <tr>
+                    <th>Races:</th>
+                    <td>Chinese</td>
+                    <th>Ethnically:</th>
+                    <td>Hakka</td>
+                </tr>
+                <tr>
+                    <th>Religion:</th>
+                    <td colspan="3">Buddha</td>
+                </tr>
+                <tr>
+                    <th>Highest Education:</th>
+                    <td colspan="3">Foundation</td>
+                </tr>
+                <tr>
+                    <th>Language Spoken:</th>
+                    <td colspan="3">Chinese, English, Malay</td>
+                </tr>
+                <tr>
+                    <th>Hometown:</th>
+                    <td colspan="3">I live in Kuching, the vibrant capital of Sarawak in Malaysia. Known for its rich cultural heritage and historical charm, Kuching offers a unique blend of traditional and modern influences, with scenic views along the Sarawak River and a lively mix of cultural events and delicious local cuisine.</td>
+                </tr>
+            </table>
+            <!-- Great Achievements -->
+            <div class="heading-line">
+                <span class="line"></span>
+                <h2 class="personal-details">Great Achievements</h2>
+                <span class="line"></span>
+            </div>
+
+            <table class="profile_table">
+                <tr>
+                    <th>Great Achievements:</th>
+                    <td>
+                        <ul>
+                            <li>SPM Result: 8A+ 2A</li>
+                            <li>Foundation Result: 4.0 cgpa</li>
+                            <li>First Runner-up In Sunway Mathematic Quiz</li>
+                            <li>Merit In Chemistry Competition</li>
+                            <li>Gold In Olimpiad Science and Mathematic</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            <!-- Personal Interests -->
+            <div class="heading-line">
+                <span class="line"></span>
+                <h2 class="personal-details">Interests</h2>
+                <span class="line"></span>
+            </div>
+            <table class="profile_table">
+                <tr>
+                    <th>Favourite Book:</th>
+                    <td>
+                        <figure class="book-pic">
+                                <img src="images/onethousand.jpg" alt="Harry Porter"/>
+                        </figure>
+                        <ul>
+                            <li><strong>Title:</strong> One Thousand and One Nights</li>
+                            <li><strong>Genre:</strong> Fantasy, Folk Tales, Adventure</li>
+                            <li><strong>Setting:</strong> Various locations in the Middle East and South Asia, including palaces, marketplaces, deserts, and magical realms. Key cities include Baghdad, Cairo, and Damascus.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Favourite Music:</th>
+                    <td>
+                        
+                        <figure class="music-pic">
+                            <img src="images/gidle.jpg" alt="G-idle"/>
+                        </figure>
+                        <ul>
+                            <li><strong>Song Title:</strong> FATE</li>
+                            <li><strong>Artist/Band:</strong> (G)I-DLE</li>
+                            <li><strong>Genre:</strong> K-Pop</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Favourite Movie:</th>
+                    <td>
+                        <figure class="movie-pic">
+                            <img src="images/insideout.jpg" alt="Inside Out 2"/>
+                        </figure>
+                        <ul>
+                            <li><strong>Title:</strong> Inside Out 2</li>
+                            <li><strong>Genre:</strong> Animation</li>
+                            <li><strong>Themes:</strong> Emotional growth, family dynamics, navigating change, personal development.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Favourite Games:</th>
+                    <td>
+                        
+                        <figure class="game-pic">
+                            <div class="game-item">
+                                <img src="images/overcooked2.jpg" alt="Overcooked 2"/>
+                                <p>Overcooked 2</p>
+                            </div>
+                            <div class="game-item">
+                                <img src="images/fallguys.jpg" alt="Fall Guys"/>
+                                <p>Fall Guys</p>
+                            </div>
+                            <div class="game-item">
+                                <img src="images/ittakestwo.jpg" alt="It Takes Two"/>
+                                <p>It Takes Two</p>
+                            </div>
+                        </figure>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Favourite Country:</th>
+                    <td>
+                        <figure class="country-pic">
+                            <div class="country-item">
+                                <img src="images/korea.jpg" alt="Korea"/>
+                                <p>Korea</p>
+                            </div>
+                            <div class="country-item">
+                                <img src="images/taiwan.jpg" alt="Taiwan"/>
+                                <p>Taiwan</p>
+                            </div>
+                            <div class="country-item">
+                                <img src="images/japan.jpg" alt="Japan"/>
+                                <p>Japan</p>
+                            </div>
+                        </figure>
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <!-- Email Me button -->
+            <div class="heading-line">
+                <span class="line"></span>
+                <h4 id="emailme"><a href="mailto:104384041@students.swinburne.edu.my">Email <i class="fa-solid fa-envelope"></i></a></h4>
+                <span class="line"></span>
+            </div>
+        </article>
+        <footer>
+            <ul>
+                <li class="footer-list">
+                    <a href="index.html">HOME</a>
+                </li>
+                <li class="footer-list">
+                    <a href="classify.html">CLASSIFY</a>
+                    <ul class="footer-content">
+                        <li><a href="classify.html#plant_taxonomy">PLANT TAXONOMY</a></li>
+                        <li><a href="classify.html#lauraceae_explain">LAURACEAE</a></li>
+                    </ul>
+                </li>
+                <li class="footer-list">
+                    <span id="herbarium-ft">HERBARIUM</span>
+                    <ul class="footer-content">
+                        <li><a href="tutorial.html">TUTORIAL</a></li>
+                        <li><a href="tools.html">TOOLS</a></li>
+                        <li><a href="care.html">CARE</a></li>
+                    </ul>
+                </li>
+                <li class="footer-list">
+                    <ul class="footer-content2">
+                        <li><a href="profile.html">ABOUT ME</a></li>
+                        <li><a href="enquiry.html">ENQUIRY</a></li>
+                        <li><a href="enhancement1.html">ENHANCEMENT</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class=ft-bottom>
+                <p><a href="index.html">&copy; Herbarium</a> |<a href="acknowledgement.html"> Acknowledgement</a> | <span class="clock" id="clock">Loading...</span></p>
+            </div>
+        </footer>
+    </main>
+	<a class="gotopbtn" href="#" title="back to top"><i class="fa-solid fa-arrow-up"></i></a>
+</body>
+</html>
