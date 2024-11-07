@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- Description: Tutorial -->
+<!-- Author: Fam Sin Mim -->
+<!-- Date 05/09/2024 -->
+<!-- Validated: OK 07/09/2024-->
+
+<head>
+    <title>Tutorial | Herbarium</title>
+	<meta charset="utf-8"/>
+	<meta name="author" content="Fam Sin Mim"/>
+	<meta name="description" content="Discover our digital Plant Herbarium, offering a diverse collection of preserved botanical specimens, detailed plant classifications, and step-by-step guides on how to preserve plants. Perfect for botanists, students, and nature enthusiasts looking to explore and learn about the world of flora."/>
+	<meta name="keywords" content="plant, herbarium, specimens, fresh, classifications,tutorial, tools, care, preserved, taxonomists, identification, plant family, genus, species"/>
+	<!-- viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<!-- favicon icon -->
+	<link rel="icon" type="image/x-icon" href="images/leaf_logo.ico"/> 
+	<!-- font -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/> 
+	<link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="styles/style.css"/>
+	<script src="enquiry.js" defer></script>
+	<script src="enhancement.js" defer></script>
+	<script src="dropdown.js" defer></script>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<input type="checkbox" id="open-check"/>
+			<label for="open-check" class="close-menu"><i class="fas fa-times"></i></label>
+			<label for="open-check" class="open-menu"><i class="fas fa-bars"></i></label>
+			<a class="logo" href="index.html"><img src="images/leaf.png" alt="Green Plant"></a>
+			<ul class="menu">
+				<li class="home"><a href="index.html">HOME</a></li>
+				<li><a href="classify.html">CLASSIFY</a></li>
+				<li class="menubar">
+					<a href="#"><span class="dropdown-btn">HERBARIUM <i class="fa fa-caret-down"></i></span></a>
+					<ul class="dropdown-content">
+					</ul>
+				</li>
+				<li><a href="profile.html">ABOUT ME</a></li>
+				<li class="special"><a href="enquiry.html">ENQUIRY <i class="fa-solid fa-circle-question"></i></a></li>
+				
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<article>
+			<!-- The sticky element of feedback -->
+			<div>
+				<button class="feedback" title="Share your feedback">Feedback | <i class="fa-solid fa-comments"></i></button>
+			</div>
+			<!-- Feedback pop up window -->
+			<div id="popup-window">
+				<p id="close_popup"><i class="fa-solid fa-xmark"></i></p>
+				<h2>Feedback</h2>
+				<p>We value your opinion.</p>
+				<form name="feedback" method="post" action="mailto:104384041@students.swinburne.edu.my" enctype="text/plain">
+					<table>
+						<tr>
+							<td colspan="2">Did the resources or guides help you achieve your goals?</td>
+						</tr>
+						<tr>
+							<td id="radio_goal">
+								<input type="radio" id="yes" name="achivegoals?" value="yes" checked="checked"/>
+								<label for="yes">Yes</label>
+							</td>
+							<td>
+								<input type="radio" id="no" name="achivegoals?" value="no"/>
+								<label for="no">No</label>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								How would you rate your website experience?
+							</td>
+						</tr>
+						<tr>
+							<td id="emoji" colspan="2">
+								<input type="radio" name="rating" id="rate_1" value="rate_1"/>
+								<label for="rate_1"><i class="fa-solid fa-face-angry"></i></label>
+
+								<input type="radio" name="rating" id="rate_2" value="rate_2"/>
+								<label for="rate_2"><i class="fa-solid fa-face-tired"></i></label>
+
+								<input type="radio" name="rating" id="rate_3" value="rate_3"/>
+								<label for="rate_3"><i class="fa-solid fa-face-frown"></i></label>
+
+								<input type="radio" name="rating" id="rate_4" value="rate_4" checked="checked"/>
+								<label for="rate_4"><i class="fa-solid fa-face-smile"></i></label>
+
+								<input type="radio" name="rating" id="rate_5" value="rate_5"/>
+								<label for="rate_5"><i class="fa-solid fa-face-laugh-squint"></i></label>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><label for="details">Please share your in detail what we can improve your website experience.</label></td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<textarea name="details" rows="7" cols="40" id="details" required="required"></textarea>
+							</td>
+						</tr>
+						<tr id="feedback_btn">
+							<td colspan="2">
+								<input type="reset" value="Cancel"/>
+								<input type="submit" value="Submit"/>
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			<!-- The sticky element of tutorial enquiry -->
+			<div>
+				<button id="tutorial_btn" class="enquiry_btn" title="Ask question about tutorial"><i class="fa-regular fa-circle-question"></i></button>
+			</div>
+			<!-- Header Image and overlay-text -->
+			<div id="tutorial-startup">
+				<img src="images/tutorial_bg.jpg" alt="Herbarium Specimens"/>
+			</div>
+			<div class="overlay-text">
+				<h1>Fresh Leaves to Perfect Specimens</h1>
+				<p><span class="text">Step-by-Step Guide</span></p>
+			</div>
+			<br><br>
+			<!-- Definition of Herbarium -->
+			<section id="definition_herbarium">
+				<h2 class="heading">What is Herbarium?</h2>
+				<div class="image-text">
+					<figure>
+						<img src="images/herbarium_specimens.jpg" alt="Herbarium Specimens"/> 
+						<figcaption>Herbarium in a bordered display</figcaption>
+					</figure>
+					<div class="desc1">
+						<p>A herbarium is a specialized collection of pressed and dried plant specimens used for research in biodiversity, ecology, and evolution. Like a library, it stores plant information rather than books, with specimens organized for easy access and preservation. Herbaria, such as the Duke Herbarium (DUKE), gather samples from various locations and time periods, aiding in the study of plant diversity, ecological patterns, and evolutionary changes.</p>
+						<br/>
+					</div> 
+					<aside>
+						<!-- Definition List of herbarium, duke and specimen -->
+						<dl>
+							<dt>Herbarium</dt>
+							<dd>A collection of dried and preserved plant specimens used for scientific research, documenting plant diversity, and studying ecological and evolutionary patterns.</dd>
+							<dt>DUKE</dt>
+							<dd>The Duke Herbarium, a research facility at Duke University that collects, preserves, and catalogs plant specimens through fieldwork and exchanges, contributing to global plant science research.</dd>
+							<dt>Specimen</dt>
+							<dd>A sample of a plant that has been pressed, dried, and labeled for scientific study and preservation.</dd>
+						</dl>
+					</aside>
+				</div>
+				<!-- History of Herbarium -->
+				<div>
+					<h2 class="heading_history">History of Herbarium</h2>
+				</div>
+				<div class="image-text">
+					<div class="desc1">
+						<p class="desc_history">Herbaria began with Luca Ghini in the 16th century, who glued plant specimens onto sheets of paper, bound them into volumes, and stored them like books. In 1751, Carolus Linnaeus revolutionized this method by advising the use of single sheets for each specimen, which could be stored in a flexible cabinet. This innovation allowed for easy insertion, removal, and rearrangement of specimens, accommodating new material and reflecting updated knowledge.</p>
+					</div>
+					<figure>
+						<img src="images/lucaghini.jpg" alt="Luca Ghini"/>
+						<figcaption>Protrait of Luca Ghini</figcaption>
+					</figure>
+				</div>
+			</section>
+			<section class="step" id="step">
+				<br/>
+				<br/>
+				<div class="heading-line">
+					<span class="line"></span>
+					<h2>The Craftsmanship Behind Specimen Perfection</h2>
+					<span class="line"></span>
+				</div>
+				<!-- Timeline of step on making herbarium -->
+				<div id="timeline">
+					<ul>
+						<li>
+							<!-- Step 1 -->
+							<div class="content">
+								<h3>Step 1: Collecting</h3>
+								<h4>Where to Collect</h4>
+								<ul>
+									<li><i class="fa-brands fa-canadian-maple-leaf"></i><span>Best Spots:</span> Edges of pathways, field and woodland borders, fence lines, and railways.</li>
+									<li><i class="fa-brands fa-canadian-maple-leaf"></i><span>Avoid:</span> Private property, nature preserves, and protected species. Use caution near roadways.</li>
+								</ul>
+								<h4>What to Collect</h4>
+								<ul>
+									<li><i class="fa-brands fa-canadian-maple-leaf"></i><span>Optimal Timing:</span> Collect plants when they are flowering for best results.</li>
+									<li><i class="fa-brands fa-canadian-maple-leaf"></i><span>Specimen Quality:</span> Choose healthy, pest-free, and dry plants. Collect all parts that aid in identification, and note characteristics like smell, texture, and height. Record the date of collection.</li>
+								</ul>
+							</div>
+						</li>
+						<!-- Step 2 -->
+						<li>
+							<div class="content">
+								<h3>Step 2: Preparation</h3>
+								<h4>Protecting Specimens</h4>
+								<ul>
+									<li><i class="fa-brands fa-canadian-maple-leaf"></i><span>Transport:</span> Use sealable plastic bags and a sturdy bag to protect plants from heat and damage.</li>
+									<li><i class="fa-brands fa-canadian-maple-leaf"></i><span>Immediate Pressing:</span> Press plants as soon as possible. If not pressing right away, keep in the refrigerator for up to a day.</li>
+								</ul>
+								<h4>Arranging Specimens:</h4>
+								<ul>
+									<li><i class="fa-brands fa-canadian-maple-leaf"></i><span>Materials:</span> Use thin plywood and parchment paper for pressing.</li>
+									<li><i class="fa-brands fa-canadian-maple-leaf"></i><span>Method:</span> Place plants with similar moisture content together. Use parchment paper and tape to arrange plants carefully, avoiding overlap.</li>
+								</ul>
+							</div>
+						</li>
+						<!-- Step 3 -->
+						<li>
+							<div class="content">
+								<h3>Step 3: Pressing</h3>
+								<h4>Pressing Process:</h4>
+								<ul>
+									<li><i class="fa-brands fa-canadian-maple-leaf"></i><span>Setup:</span> Load plants between layers of parchment in the press. Apply pressure using a plant press or heavy books.</li>
+									<li><i class="fa-brands fa-canadian-maple-leaf"></i><span>Monitoring:</span> Check after 24 hours. Replace wrinkled parchment and adjust pressure if needed. Drying takes about a week, up to two weeks for flesh plants.</li>
+								</ul>
+							</div>
+						</li>
+						<!-- Step 4 -->
+						<li>
+							<div class="content">
+								<h3>Step 4: Mounting</h3>
+								<h4>Mounting Specimens:</h4>
+								<ul>
+									<li><i class="fa-brands fa-canadian-maple-leaf"></i><span>Materials:</span> Use acid-free paper and acrylic adhesive.</li>
+									<li><i class="fa-brands fa-canadian-maple-leaf"></i><span>Process:</span> Apply adhesive to the plant, avoiding direct contact with skin. Use tweezers and wooden skewers to position the plant. Ensure all parts are adhered.</li>
+								</ul>
+							</div>
+						</li>
+						<!-- Step 5 -->
+						<li>
+							<div class="content">
+								<h3>Step 5: Freezing</h3>
+								<h4>Freezing Process:</h4>
+								<ul>
+									<li><i class="fa-brands fa-canadian-maple-leaf"></i><span>Setup:</span> Stack mounted specimens between parchment layers, wrapped in plastic and strapped tightly. Freeze for 72 hours to eliminate pests.
+									</li>
+								</ul>
+							</div>
+						</li>
+						<!-- Step 6 -->
+						<li>
+							<div class="content">
+								<h3>Step 6: Identification</h3>
+								<h4>Identifying Plants:</h4>
+								<ul>
+									<li><i class="fa-brands fa-canadian-maple-leaf"></i><span>Initial Identification:</span> Record fresh plant details like color and scent. Use a dichotomous key and hand lens for accuracy.
+									</li>
+									<li><i class="fa-brands fa-canadian-maple-leaf"></i><span>Verification:</span> Compare specimens with photographs and botanical illustrations for confirmation.</li>
+								</ul>
+							</div>
+						</li>
+						<!-- Step 7 -->
+						<li>
+							<div class="content">
+								<h3>Step 7: Cataloging</h3>
+								<h4>Preserving Specimens:</h4>
+								<ul>
+									<li><i class="fa-brands fa-canadian-maple-leaf"></i><span>Cataloging:</span> Assign a number and link it to a digital database with plant information.
+									</li>
+									<li><i class="fa-brands fa-canadian-maple-leaf"></i><span>Storage:</span> Place specimens in transparent, acid-free sleeves, and store in wooden cases with cedar shavings. Inspect regularly for insect damage.</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<div class="heading-line">
+					<span class="line"></span>
+					<h2>Creating an Herbarium Label</h2>
+					<span class="line"></span>
+				</div>
+				<p>Labels are crucial to the value of a herbarium specimen, as inaccurate or missing labels render it scientifically and historically useless.</p>
+				<div class="image-text">
+					<figure>
+						<img src="images/label.jpg" alt="Herbarium Label">
+						<figcaption>Herbarium Label Sample</figcaption>
+					</figure>
+					<div class="desc1">
+						<p>Key pieces of information that must be included:</p>
+						<ul>
+							<li><i class="fa-solid fa-leaf"></i>  Scientific name (including family, genus, and species)</li>
+							<li><i class="fa-solid fa-calendar-days"></i>  Collection date</li>
+							<li><i class="fa-solid fa-location-dot"></i>  The locality</li>
+							<li><i class="fa-solid fa-hashtag"></i>  Specimen number or collection number</li>
+							<li><i class="fa-solid fa-signature"></i>  Collector's Name</li>
+							<li><i class="fa-regular fa-note-sticky"></i>  Habitat Notes</li>
+						</ul>
+					</div>
+					<aside id="label">
+						<p>Things need to take note:</p>
+						<ul>
+							<li>Include a label with each specimen in standard size newsprint/paper ( 11cm x 7cm )</li>
+							<li>Do not staple labels to newsprint</li>
+							<li>Do not tape labels to newsprint</li>
+							<li>Do not paperclip labels to newsprint</li>
+						</ul>
+						<figure>
+							<img src="images/label_size.webp" alt="Label Size">
+						</figure>
+					</aside>
+				</div>
+				
+			</section>
+		</article>
+		<footer>
+			<ul>
+				<li class="footer-list">
+					<a href="index.html">HOME</a>
+				</li>
+				<li class="footer-list">
+					<a href="classify.html">CLASSIFY</a>
+					<ul class="footer-content">
+						<li><a href="classify.html#plant_taxonomy">PLANT TAXONOMY</a></li>
+						<li><a href="classify.html#lauraceae_explain">LAURACEAE</a></li>
+					</ul>
+				</li>
+				<li class="footer-list">
+					<span id="herbarium-ft">HERBARIUM</span>
+					<ul class="footer-content">
+						<li><a href="tutorial.html">TUTORIAL</a></li>
+						<li><a href="tools.html">TOOLS</a></li>
+						<li><a href="care.html">CARE</a></li>
+					</ul>
+				</li>
+				<li class="footer-list">
+					<ul class="footer-content2">
+						<li><a href="profile.html">ABOUT ME</a></li>
+						<li><a href="enquiry.html">ENQUIRY</a></li>
+						<li><a href="enhancement1.html">ENHANCEMENT</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class=ft-bottom>
+				<p><a href="index.html">&copy; Herbarium</a> |<a href="acknowledgement.html"> Acknowledgement</a> | <span class="clock" id="clock">Loading...</span></p>
+			</div>
+		</footer>
+	</main>
+	<a class="gotopbtn" href="#" title="back to top"><i class="fa-solid fa-arrow-up"></i></a>
+</body>
+</html>
