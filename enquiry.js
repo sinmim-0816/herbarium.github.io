@@ -283,9 +283,14 @@ function validate_lastname(){
 // Validate the phone
 function validate_phone(){
     const phonepattern=/^01[0-9]{8}$/;
+    const specialCharPattern = /[?!@\-_\+\-#$%^&*()]/;
     var phonevalue=phone.value.trim();
     if (phonevalue==""){
         setError(phone,"* The phone number is required.");
+        return false;
+    }
+    else if (specialCharPattern.test(phonevalue)){
+        setError(phone,"* The phone number should not have special character.");
         return false;
     }
     else if (!phonepattern.test(phonevalue)){
