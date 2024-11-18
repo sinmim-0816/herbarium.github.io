@@ -369,9 +369,6 @@ function validate_postcode(){
     else if (!postcodepattern.test(postcodevalue)){
         setError(postcode,"* Please ensure the postcode is in 5 digit.")
     }
-    else if(postcodevalue.length>5){
-        setError(postcode,"* Postcode cannot exceed 5 digit.")
-    }
     else{
         setSuccess(postcode);
         return true;
